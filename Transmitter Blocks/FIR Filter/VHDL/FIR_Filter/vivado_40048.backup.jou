@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 23 11:10:48 2023
+# Process ID: 40048
+# Current directory: C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42736 C:\Users\jhgsilva\FPGA_Projects\Tx_Blocks\FIR_Filter\FIR_Filter.xpr
+# Log file: C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/vivado.log
+# Journal file: C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/SCM_System_4_SC/SCM_System_4_SC.xpr
+update_compile_order -fileset sources_1

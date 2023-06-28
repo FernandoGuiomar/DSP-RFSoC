@@ -1,0 +1,6 @@
+main_fir_filter_0_0.vhd,vhdl,xil_defaultlib,../../../bd/main/ip/main_fir_filter_0_0/sim/main_fir_filter_0_0.vhd,
+main_sim_clk_gen_0_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_sim_clk_gen_0_0/sim/main_sim_clk_gen_0_0.v,
+main_blk_mem_gen_0_1.v,verilog,xil_defaultlib,../../../bd/main/ip/main_blk_mem_gen_0_1/sim/main_blk_mem_gen_0_1.v,
+main_c_counter_binary_0_0.vhd,vhdl,xil_defaultlib,../../../bd/main/ip/main_c_counter_binary_0_0/sim/main_c_counter_binary_0_0.vhd,
+main.vhd,vhdl,xil_defaultlib,../../../bd/main/sim/main.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

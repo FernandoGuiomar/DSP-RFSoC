@@ -1,0 +1,148 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x716BB0725A9E16BD",
+      "device": "xczu48dr-fsvg1517-2-e-es1",
+      "gen_directory": "../../../../FIR_Filter.gen/sources_1/bd/main",
+      "name": "main",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "sim_clk_gen_0": "",
+      "blk_mem_gen_0": "",
+      "c_counter_binary_0": "",
+      "fir_filter_0": ""
+    },
+    "ports": {
+      "out16": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "clk": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "sim_clk_gen_0": {
+        "vlnv": "xilinx.com:ip:sim_clk_gen:1.0",
+        "xci_name": "main_sim_clk_gen_0_0",
+        "xci_path": "ip\\main_sim_clk_gen_0_0\\main_sim_clk_gen_0_0.xci",
+        "inst_hier_path": "sim_clk_gen_0"
+      },
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "main_blk_mem_gen_0_1",
+        "xci_path": "ip\\main_blk_mem_gen_0_1\\main_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../inputSignalSamples.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Port_A_Write_Rate": {
+            "value": "0"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "16384"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "main_c_counter_binary_0_0",
+        "xci_path": "ip\\main_c_counter_binary_0_0\\main_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "Output_Width": {
+            "value": "14"
+          }
+        }
+      },
+      "fir_filter_0": {
+        "vlnv": "xilinx.com:module_ref:fir_filter:1.0",
+        "xci_name": "main_fir_filter_0_0",
+        "xci_path": "ip\\main_fir_filter_0_0\\main_fir_filter_0_0.xci",
+        "inst_hier_path": "fir_filter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fir_filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "inputData": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "outputData": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "fir_filter_0/inputData"
+        ]
+      },
+      "sim_clk_gen_0_clk": {
+        "ports": [
+          "sim_clk_gen_0/clk",
+          "blk_mem_gen_0/clka",
+          "c_counter_binary_0/CLK",
+          "clk",
+          "fir_filter_0/clk"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "fir_filter_0_outputData": {
+        "ports": [
+          "fir_filter_0/outputData",
+          "out16"
+        ]
+      }
+    }
+  }
+}

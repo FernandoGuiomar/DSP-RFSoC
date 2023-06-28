@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.gen/sources_1/bd/main/hdl/main_wrapper.vhd,1685722932,vhdl,,,,main_wrapper,,,,,,,,
+C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.ip_user_files/bd/main/ip/main_blk_mem_gen_0_1/sim/main_blk_mem_gen_0_1.v,1685720775,verilog,,,,main_blk_mem_gen_0_1,,,,,,,,
+C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.ip_user_files/bd/main/ip/main_c_counter_binary_0_0/sim/main_c_counter_binary_0_0.vhd,1685720775,vhdl,,,,main_c_counter_binary_0_0,,,,,,,,
+C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.ip_user_files/bd/main/ip/main_fir_filter_0_0/sim/main_fir_filter_0_0.vhd,1685722932,vhdl,,,,main_fir_filter_0_0,,,,,,,,
+C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.ip_user_files/bd/main/ip/main_sim_clk_gen_0_0/sim/main_sim_clk_gen_0_0.v,1685720774,verilog,,C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.ip_user_files/bd/main/ip/main_blk_mem_gen_0_1/sim/main_blk_mem_gen_0_1.v,,main_sim_clk_gen_0_0,,,,,,,,
+C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.ip_user_files/bd/main/sim/main.vhd,1685722932,vhdl,,,,main,,,,,,,,
+C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/FIR_Filter/FIR_Filter.srcs/sources_1/new/fir_filter.vhd,1685722902,vhdl,,,,fir_filter;rompackage,,,,,,,,
