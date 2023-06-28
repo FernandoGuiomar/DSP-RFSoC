@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Save_Data.srcs/sources_1/new/save_data.vhd" \
+"../../../../Save_Data.ip_user_files/bd/main/ip/main_c_counter_binary_0_0/sim/main_c_counter_binary_0_0.vhd" \
+"../../../../Save_Data.ip_user_files/bd/main/sim/main.vhd" \
+"../../../../Save_Data.ip_user_files/bd/main/ip/main_generate_save_data_0_4/sim/main_generate_save_data_0_4.vhd" \
+"../../../../Save_Data.gen/sources_1/bd/main/hdl/main_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

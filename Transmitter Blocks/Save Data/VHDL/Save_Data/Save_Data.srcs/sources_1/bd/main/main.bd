@@ -1,0 +1,175 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD7A2C375A24D7936",
+      "device": "xczu48dr-fsvg1517-2-e",
+      "gen_directory": "../../../../Save_Data.gen/sources_1/bd/main",
+      "name": "main",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "blk_mem_gen_0": "",
+      "sim_clk_gen_0": "",
+      "c_counter_binary_0": "",
+      "generate_save_data_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "main_sim_clk_gen_0_0_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "user_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "MemoryOut": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "adress": {
+        "direction": "O",
+        "left": "13",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 14} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 14}",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "main_blk_mem_gen_0_0",
+        "xci_path": "ip\\main_blk_mem_gen_0_0\\main_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../memoryTaps.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Port_A_Write_Rate": {
+            "value": "0"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "16384"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "sim_clk_gen_0": {
+        "vlnv": "xilinx.com:ip:sim_clk_gen:1.0",
+        "xci_name": "main_sim_clk_gen_0_0",
+        "xci_path": "ip\\main_sim_clk_gen_0_0\\main_sim_clk_gen_0_0.xci",
+        "inst_hier_path": "sim_clk_gen_0"
+      },
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "main_c_counter_binary_0_0",
+        "xci_path": "ip\\main_c_counter_binary_0_0\\main_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "Output_Width": {
+            "value": "14"
+          }
+        }
+      },
+      "generate_save_data_0": {
+        "vlnv": "xilinx.com:module_ref:generate_save_data:1.0",
+        "xci_name": "main_generate_save_data_0_4",
+        "xci_path": "ip\\main_generate_save_data_0_4\\main_generate_save_data_0_4.xci",
+        "inst_hier_path": "generate_save_data_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "generate_save_data",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "main_sim_clk_gen_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "writeSamples": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sim_clk_gen_0_clk": {
+        "ports": [
+          "sim_clk_gen_0/clk",
+          "blk_mem_gen_0/clka",
+          "c_counter_binary_0/CLK",
+          "clk",
+          "generate_save_data_0/clk"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "blk_mem_gen_0/addra",
+          "adress"
+        ]
+      },
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "MemoryOut",
+          "generate_save_data_0/writeSamples"
+        ]
+      }
+    }
+  }
+}

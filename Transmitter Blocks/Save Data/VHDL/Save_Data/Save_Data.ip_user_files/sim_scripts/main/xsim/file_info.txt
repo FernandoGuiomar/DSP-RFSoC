@@ -1,0 +1,6 @@
+main_blk_mem_gen_0_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_blk_mem_gen_0_0/sim/main_blk_mem_gen_0_0.v,
+main_sim_clk_gen_0_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_sim_clk_gen_0_0/sim/main_sim_clk_gen_0_0.v,
+main_c_counter_binary_0_0.vhd,vhdl,xil_defaultlib,../../../bd/main/ip/main_c_counter_binary_0_0/sim/main_c_counter_binary_0_0.vhd,
+main.vhd,vhdl,xil_defaultlib,../../../bd/main/sim/main.vhd,
+main_generate_save_data_0_4.vhd,vhdl,xil_defaultlib,../../../bd/main/ip/main_generate_save_data_0_4/sim/main_generate_save_data_0_4.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

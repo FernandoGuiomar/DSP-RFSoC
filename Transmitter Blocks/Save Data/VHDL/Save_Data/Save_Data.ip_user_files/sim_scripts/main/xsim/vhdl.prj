@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/main/ip/main_c_counter_binary_0_0/sim/main_c_counter_binary_0_0.vhd" \
+"../../../bd/main/sim/main.vhd" \
+"../../../bd/main/ip/main_generate_save_data_0_4/sim/main_generate_save_data_0_4.vhd" \
+
+nosort
