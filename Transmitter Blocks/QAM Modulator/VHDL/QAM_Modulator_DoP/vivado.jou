@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun 28 16:09:07 2023
+# Process ID: 56572
+# Current directory: C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54852 C:\Users\jhgsilva\Documents\GitHub\DSP-RFSoC\Transmitter Blocks\QAM Modulator\VHDL\QAM_Modulator_DoP\QAM_Modulator_DoP.xpr
+# Log file: C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP/vivado.log
+# Journal file: C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP/QAM_Modulator_DoP.xpr}
+update_compile_order -fileset sources_1
+close_project

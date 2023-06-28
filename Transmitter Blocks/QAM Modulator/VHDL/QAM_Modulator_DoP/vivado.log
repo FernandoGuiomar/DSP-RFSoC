@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun 28 16:09:07 2023
+# Process ID: 56572
+# Current directory: C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54852 C:\Users\jhgsilva\Documents\GitHub\DSP-RFSoC\Transmitter Blocks\QAM Modulator\VHDL\QAM_Modulator_DoP\QAM_Modulator_DoP.xpr
+# Log file: C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP/vivado.log
+# Journal file: C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP/QAM_Modulator_DoP.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP'
+INFO: [Project 1-313] Project file moved from 'C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/QAM_Modulator_DoP' since last save.
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store'; using path 'C:/Users/jhgsilva/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store' instead.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/jhgsilva/Documents/GitHub/DSP-RFSoC/Transmitter Blocks/QAM Modulator/VHDL/QAM_Modulator_DoP/QAM_Modulator_DoP.gen/sources_1', nor could it be found using path 'C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/QAM_Modulator_DoP/QAM_Modulator_DoP.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 1146.105 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_project
