@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Mixer_DoP/Mixer_DoP.ip_user_files/bd/main/ip/main_sim_clk_gen_0_0/sim/main_sim_clk_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_sim_clk_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Mixer_DoP/Mixer_DoP.ip_user_files/bd/main/ip/main_xlconstant_0_0/sim/main_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Mixer_DoP/Mixer_DoP.ip_user_files/bd/main/ip/main_xlconstant_0_1/sim/main_xlconstant_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_xlconstant_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Mixer_DoP/Mixer_DoP.srcs/sources_1/new/mixer_dop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mixer_dop'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Mixer_DoP/Mixer_DoP.ip_user_files/bd/main/ip/main_mixer_dop_0_0/sim/main_mixer_dop_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_mixer_dop_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Mixer_DoP/Mixer_DoP.ip_user_files/bd/main/sim/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Mixer_DoP/Mixer_DoP.gen/sources_1/bd/main/hdl/main_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_wrapper'

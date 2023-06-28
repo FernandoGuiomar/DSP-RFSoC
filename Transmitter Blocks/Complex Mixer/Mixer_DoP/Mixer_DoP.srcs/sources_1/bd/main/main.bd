@@ -1,0 +1,179 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA311486F729AEF",
+      "device": "xczu48dr-fsvg1517-2-e-es1",
+      "gen_directory": "../../../../Mixer_DoP.gen/sources_1/bd/main",
+      "name": "main",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "sim_clk_gen_0": "",
+      "c_counter_binary_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "mixer_dop_0": ""
+    },
+    "ports": {
+      "outputValue": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "Input1": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "Input2": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "clk": {
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "main_sim_clk_gen_0_0_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "user_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "sim_clk_gen_0": {
+        "vlnv": "xilinx.com:ip:sim_clk_gen:1.0",
+        "xci_name": "main_sim_clk_gen_0_0",
+        "xci_path": "ip\\main_sim_clk_gen_0_0\\main_sim_clk_gen_0_0.xci",
+        "inst_hier_path": "sim_clk_gen_0"
+      },
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "main_c_counter_binary_0_0",
+        "xci_path": "ip\\main_c_counter_binary_0_0\\main_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "Output_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "main_xlconstant_0_0",
+        "xci_path": "ip\\main_xlconstant_0_0\\main_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "844429224902651"
+          },
+          "CONST_WIDTH": {
+            "value": "64"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "main_xlconstant_0_1",
+        "xci_path": "ip\\main_xlconstant_0_1\\main_xlconstant_0_1.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "231721001865919"
+          },
+          "CONST_WIDTH": {
+            "value": "64"
+          }
+        }
+      },
+      "mixer_dop_0": {
+        "vlnv": "xilinx.com:module_ref:mixer_dop:1.0",
+        "xci_name": "main_mixer_dop_0_0",
+        "xci_path": "ip\\main_mixer_dop_0_0\\main_mixer_dop_0_0.xci",
+        "inst_hier_path": "mixer_dop_0",
+        "parameters": {
+          "degree_of_parallelism": {
+            "value": "4"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mixer_dop",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "main_sim_clk_gen_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "input_data": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "input_osc": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "output_data": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "xlconstant_0/dout",
+          "Input2",
+          "mixer_dop_0/input_data"
+        ]
+      },
+      "sim_clk_gen_0_clk": {
+        "ports": [
+          "sim_clk_gen_0/clk",
+          "c_counter_binary_0/CLK",
+          "clk",
+          "mixer_dop_0/clk"
+        ]
+      },
+      "nco_dop_0_cosValues": {
+        "ports": [
+          "xlconstant_1/dout",
+          "Input1",
+          "mixer_dop_0/input_osc"
+        ]
+      },
+      "mixer_dop_0_output_data": {
+        "ports": [
+          "mixer_dop_0/output_data",
+          "outputValue"
+        ]
+      }
+    }
+  }
+}

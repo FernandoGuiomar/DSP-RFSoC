@@ -1,0 +1,25 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.38235",
+   "Default View_TopLeft":"-101,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 3 -x 550 -y 120 -defaultsOSRD
+preplace portBus outputValue -pg 1 -lvl 3 -x 550 -y 230 -defaultsOSRD
+preplace portBus Input1 -pg 1 -lvl 3 -x 550 -y 310 -defaultsOSRD
+preplace portBus Input2 -pg 1 -lvl 3 -x 550 -y 150 -defaultsOSRD
+preplace inst sim_clk_gen_0 -pg 1 -lvl 1 -x 100 -y 70 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 2 -x 370 -y 60 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 100 -y 180 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 100 -y 280 -defaultsOSRD
+preplace inst mixer_dop_0 -pg 1 -lvl 2 -x 370 -y 230 -defaultsOSRD
+preplace netloc blk_mem_gen_0_douta 1 1 2 210 150 NJ
+preplace netloc sim_clk_gen_0_clk 1 1 2 200 120 NJ
+preplace netloc nco_dop_0_cosValues 1 1 2 200 310 NJ
+preplace netloc mixer_dop_0_output_data 1 2 1 NJ 230
+levelinfo -pg 1 0 100 370 550
+pagesize -pg 1 -db -bbox -sgen 0 0 720 340
+"
+}
+0
