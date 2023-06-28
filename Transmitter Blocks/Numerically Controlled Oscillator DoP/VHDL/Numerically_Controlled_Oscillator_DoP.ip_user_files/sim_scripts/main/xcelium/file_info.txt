@@ -1,0 +1,7 @@
+main_nco_dop_0_0.vhd,vhdl,xil_defaultlib,../../../bd/main/ip/main_nco_dop_0_0/sim/main_nco_dop_0_0.vhd,
+sim_clk_gen_v1_0_vl_rfs.v,verilog,sim_clk_gen_v1_0_2,../../../../Numerically_Controlled_Oscillator_DoP.gen/sources_1/bd/main/ipshared/b740/hdl/sim_clk_gen_v1_0_vl_rfs.v,
+main_sim_clk_gen_0_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_sim_clk_gen_0_0/sim/main_sim_clk_gen_0_0.v,
+xlconstant_v1_1_vl_rfs.v,verilog,xlconstant_v1_1_7,../../../../Numerically_Controlled_Oscillator_DoP.gen/sources_1/bd/main/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v,
+main_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_xlconstant_0_0/sim/main_xlconstant_0_0.v,
+main.vhd,vhdl,xil_defaultlib,../../../bd/main/sim/main.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 15 10:55:37 2023" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="zynquplusRFSOC" BOARD="xilinx.com:zcu208_es:part0:1.2" DEVICE="xczu48dr" NAME="main" PACKAGE="fsvg1517" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="clk_ena_out" SIGIS="undef" SIGNAME="nco_dop_0_clk_ena_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nco_dop_0" PORT="clk_ena_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="clk" SIGIS="undef" SIGNAME="sim_clk_gen_0_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sim_clk_gen_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="cosValues" RIGHT="0" SIGIS="undef" SIGNAME="nco_dop_0_cosValues">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nco_dop_0" PORT="cosValues"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="sinValues" RIGHT="0" SIGIS="undef" SIGNAME="nco_dop_0_sinValues">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nco_dop_0" PORT="sinValues"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/nco_dop_0" HWVERSION="1.0" INSTANCE="nco_dop_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nco_dop" VLNV="xilinx.com:module_ref:nco_dop:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="inverseFreq" VALUE="&quot;1&quot;"/>
+        <PARAMETER NAME="degree_of_parallelism" VALUE="1"/>
+        <PARAMETER NAME="lookUpTableSize" VALUE="4096"/>
+        <PARAMETER NAME="freqSignal" VALUE="100000"/>
+        <PARAMETER NAME="freqSampling" VALUE="100000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="main_nco_dop_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="sim_clk_gen_0_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sim_clk_gen_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_ena_in" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_ena_out" SIGIS="undef" SIGNAME="nco_dop_0_clk_ena_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_ena_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="cosValues" RIGHT="0" SIGIS="undef" SIGNAME="nco_dop_0_cosValues">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cosValues"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="sinValues" RIGHT="0" SIGIS="undef" SIGNAME="nco_dop_0_sinValues">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sinValues"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/sim_clk_gen_0" HWVERSION="1.0" INSTANCE="sim_clk_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sim_clk_gen" VLNV="xilinx.com:ip:sim_clk_gen:1.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=sim_clk_gen;v=v1_0;d=pb054-sim-clk-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="CLOCK_TYPE" VALUE="Single_Ended"/>
+        <PARAMETER NAME="CLOCK_PERIOD" VALUE="10"/>
+        <PARAMETER NAME="INITIAL_RESET_CLOCK_CYCLES" VALUE="100"/>
+        <PARAMETER NAME="RESET_POLARITY" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="main_sim_clk_gen_0_0"/>
+        <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk" SIGIS="clk" SIGNAME="sim_clk_gen_0_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+            <CONNECTION INSTANCE="nco_dop_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sync_rst" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="main_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nco_dop_0" PORT="clk_ena_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

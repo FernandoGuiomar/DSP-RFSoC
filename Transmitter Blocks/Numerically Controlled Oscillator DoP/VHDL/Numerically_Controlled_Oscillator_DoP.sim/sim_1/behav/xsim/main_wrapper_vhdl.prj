@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Numerically_Controlled_Oscillator_DoP.srcs/sources_1/new/nco_dop.vhd" \
+"../../../../Numerically_Controlled_Oscillator_DoP.ip_user_files/bd/main/ip/main_nco_dop_0_0/sim/main_nco_dop_0_0.vhd" \
+"../../../../Numerically_Controlled_Oscillator_DoP.ip_user_files/bd/main/sim/main.vhd" \
+"../../../../Numerically_Controlled_Oscillator_DoP.gen/sources_1/bd/main/hdl/main_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

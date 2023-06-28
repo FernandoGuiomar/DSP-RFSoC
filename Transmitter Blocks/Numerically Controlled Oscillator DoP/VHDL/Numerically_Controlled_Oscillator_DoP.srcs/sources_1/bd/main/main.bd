@@ -1,0 +1,149 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC10D19B85C53EE09",
+      "device": "xczu48dr-fsvg1517-2-e-es1",
+      "gen_directory": "../../../../Numerically_Controlled_Oscillator_DoP.gen/sources_1/bd/main",
+      "name": "main",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "sim_clk_gen_0": "",
+      "xlconstant_0": "",
+      "nco_dop_0": ""
+    },
+    "ports": {
+      "clk_ena_out": {
+        "direction": "O"
+      },
+      "clk": {
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "main_sim_clk_gen_0_0_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "user_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "cosValues": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "sinValues": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "sim_clk_gen_0": {
+        "vlnv": "xilinx.com:ip:sim_clk_gen:1.0",
+        "xci_name": "main_sim_clk_gen_0_0",
+        "xci_path": "ip\\main_sim_clk_gen_0_0\\main_sim_clk_gen_0_0.xci",
+        "inst_hier_path": "sim_clk_gen_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "main_xlconstant_0_0",
+        "xci_path": "ip\\main_xlconstant_0_0\\main_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "nco_dop_0": {
+        "vlnv": "xilinx.com:module_ref:nco_dop:1.0",
+        "xci_name": "main_nco_dop_0_0",
+        "xci_path": "ip\\main_nco_dop_0_0\\main_nco_dop_0_0.xci",
+        "inst_hier_path": "nco_dop_0",
+        "parameters": {
+          "degree_of_parallelism": {
+            "value": "1"
+          },
+          "inverseFreq": {
+            "value": "\"1\""
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "nco_dop",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "main_sim_clk_gen_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk_ena_in": {
+            "direction": "I"
+          },
+          "clk_ena_out": {
+            "direction": "O"
+          },
+          "cosValues": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "sinValues": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sim_clk_gen_0_clk": {
+        "ports": [
+          "sim_clk_gen_0/clk",
+          "clk",
+          "nco_dop_0/clk"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "nco_dop_0/clk_ena_in"
+        ]
+      },
+      "nco_dop_0_clk_ena_out": {
+        "ports": [
+          "nco_dop_0/clk_ena_out",
+          "clk_ena_out"
+        ]
+      },
+      "nco_dop_0_cosValues": {
+        "ports": [
+          "nco_dop_0/cosValues",
+          "cosValues"
+        ]
+      },
+      "nco_dop_0_sinValues": {
+        "ports": [
+          "nco_dop_0/sinValues",
+          "sinValues"
+        ]
+      }
+    }
+  }
+}
