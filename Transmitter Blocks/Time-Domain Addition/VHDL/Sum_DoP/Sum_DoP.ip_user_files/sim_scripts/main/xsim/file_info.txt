@@ -1,0 +1,9 @@
+main_sum_dop_0_0.vhd,vhdl,xil_defaultlib,../../../bd/main/ip/main_sum_dop_0_0/sim/main_sum_dop_0_0.vhd,
+main_sim_clk_gen_0_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_sim_clk_gen_0_0/sim/main_sim_clk_gen_0_0.v,
+main_xlconcat_0_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_xlconcat_0_0/sim/main_xlconcat_0_0.v,
+main_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_xlconstant_0_0/sim/main_xlconstant_0_0.v,
+main_xlconstant_1_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_xlconstant_1_0/sim/main_xlconstant_1_0.v,
+main_xlconstant_2_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_xlconstant_2_0/sim/main_xlconstant_2_0.v,
+main_xlconstant_3_0.v,verilog,xil_defaultlib,../../../bd/main/ip/main_xlconstant_3_0/sim/main_xlconstant_3_0.v,
+main.vhd,vhdl,xil_defaultlib,../../../bd/main/sim/main.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

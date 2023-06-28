@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Sum_DoP/Sum_DoP.ip_user_files/bd/main/sim/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Sum_DoP/Sum_DoP.gen/sources_1/bd/main/hdl/main_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_wrapper'

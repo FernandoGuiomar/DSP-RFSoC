@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Sum_DoP.srcs/sources_1/new/sum_dop.vhd" \
+"../../../../Sum_DoP.ip_user_files/bd/main/ip/main_sum_dop_0_0/sim/main_sum_dop_0_0.vhd" \
+"../../../../Sum_DoP.ip_user_files/bd/main/sim/main.vhd" \
+"../../../../Sum_DoP.gen/sources_1/bd/main/hdl/main_wrapper.vhd" \
+
+# Do not sort compile order
+nosort
