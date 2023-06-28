@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Numerically_Controlled_Oscillator/Numerically_Controlled_Oscillator.ip_user_files/bd/main/ip/main_nco_0_0/sim/main_nco_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_nco_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Numerically_Controlled_Oscillator/Numerically_Controlled_Oscillator.ip_user_files/bd/main/sim/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jhgsilva/FPGA_Projects/Tx_Blocks/Numerically_Controlled_Oscillator/Numerically_Controlled_Oscillator.gen/sources_1/bd/main/hdl/main_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main_wrapper'
